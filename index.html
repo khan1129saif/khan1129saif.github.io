@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alur Saif Ali Khan | Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <script src="https://kit.fontawesome.com/301d42c14e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="video-bg">
+            <video autoplay loop muted>
+                <source src="teck-background.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="container">
+            <nav>
+                <i id="symbol" class="fa-brands fa-nfc-symbol"></i>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="X" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i id="M" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Integrated M.Tech Student in Software Engineering</p>
+                <h1>Hi, I'm <br> <span>Saif Ali Khan</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------About---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="formal.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Software engineering student at VIT-AP, Amaravati (7.96 / 10 CGPA, graduating 2027) with a Python and Java
+                        foundation, working with live data through REST APIs, and a strong interest in the financial
+                        industry. Analytical, detail-oriented problem solver who enjoys testing and debugging to get
+                        things right, and keen to apply programming skills to process automation and data-driven
+                        reporting. Outcome-driven, with strong communication and teamwork skills.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming &amp; Automation</span><br>Python, Java, JavaScript, HTML, CSS</li>
+                            <li><span>Data &amp; APIs</span><br>REST API Integration, Real-Time Data Retrieval, DBMS, Web Development</li>
+                            <li><span>Analytical &amp; Quality Skills</span><br>Problem Solving, Debugging, Testing, Code Reviews, Competitive Coding</li>
+                            <li><span>Core Coursework</span><br>DBMS, DSA, Object-Oriented Programming, Java Programming, Operating Systems, Computer Networks</li>
+                            <li><span>Spoken Languages</span><br>Urdu (Native), Telugu (Native), English (Professional Proficiency), Hindi (Conversational)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jul 10, 2024 – Aug 10, 2024</span><br>Web Development Virtual Internship, Bharat Intern LLP (AICTE Verified)</li>
+                            <li><span>Certifications</span><br>AWS Educate: Getting Started with Compute &amp; Storage<br>Microsoft Learn: Embark on Your AI Journey with Free AI Tools from Microsoft Education</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 – 2027</span><br>Integrated M.Tech in Software Engineering (5-year), Vellore Institute of Technology, Amaravati | 7.96 / 10 CGPA</li>
+                            <li><span>2019 – 2021</span><br>Higher Secondary / Intermediate, Narayana Junior College, Guntakal | 87%</li>
+                            <li><span>2015 – 2019</span><br>Secondary School, Narayana Group of Schools, Guntakal | 96%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">What I Do</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Responsive web apps built with HTML, CSS and JavaScript, integrating third-party REST APIs to fetch and display live data.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Machine Learning &amp; Deep Learning</h2>
+                    <p>Time-series prediction with Recurrent Neural Networks (GRU and LSTM), including automated model training and prediction pipelines.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+                <div>
+                    <h2>Secure Distributed Systems</h2>
+                    <p>File storage systems with end-to-end encryption, TLS, 3x replication and role-based access control.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------portfolio--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="secure-vault.png">
+                    <div class="layer">
+                        <h3>SecureVault</h3>
+                        <p>Distributed file storage and management system with end-to-end encryption, TLS, 3x replication and role-based access control.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Weather-Rnn.png">
+                    <div class="layer">
+                        <h3>Weather-RNN</h3>
+                        <p>Predicts hourly temperatures using RNNs (GRU and LSTM) with an automated training and prediction pipeline.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Weather-Forecasting-app.png">
+                    <div class="layer">
+                        <h3>Weather Forecasting App</h3>
+                        <p>Responsive web app showing real-time temperature, humidity and wind speed for global locations via the OpenWeather API.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/khan1129saif" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ---------------Contact---------------->
+    <div id="contact">
+        <div class="con-container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>saif.22mis7009@vitapstudent.ac.in</p>
+                <p><i class="fa-solid fa-phone"></i>+91-9059926982</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a id="l" href="https://www.linkedin.com/in/saif-ali-khan-38122a253" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/khan1129saif" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="Saif_Ali_Khan_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2026, Made by Alur Saif Ali Khan</p>
+        </div>
+    </div>
+    <script src="port.js"></script>
+</body>
+
+</html>
